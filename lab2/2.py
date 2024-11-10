@@ -6,7 +6,6 @@ def bls(M):#сортировка пузырьком
         s=False
         for j in range(0,len(M)-i-1):
             if M[j]>M[j+1]:
-                #swap(M,j,j+1)
                 M[j],M[j+1]=M[j+1],M[j]
                 s=True
         if not s:
@@ -18,7 +17,6 @@ def sls(M):#сортировка выбором
         for j in range(i,len(M)):
             if M[j]<M[n]:
                 n=j
-        #swap(M,i,n)
         M[i],M[n]=M[n],M[i]
     print(M)
 t1=0
