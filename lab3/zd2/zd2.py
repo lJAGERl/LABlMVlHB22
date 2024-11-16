@@ -13,7 +13,7 @@ def f1(kmd, m):
         if n==[]:
             print("неверно составлена команда")
         else:
-            if n[1]>=len(m) or n[0]<0 or len(n)<3:
+            if n[1]>=len(m) or n[0]<0 or n[2]<=0 or len(n)<3:
                 print("неверный диапазон")
             else:
                 i=n[0]
